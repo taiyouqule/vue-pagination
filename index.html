@@ -22,7 +22,7 @@
         </div> -->
 
         <div id="app">
-        <vue-nav :cur.sync="cur" :all.sync="all" v-on:btn-click="listen"></vue-nav>
+        <vue-nav :page_length.sync="8" :cur.sync="cur" :all.sync="all" v-on:btn-click="listen"></vue-nav>
           <p>{{msg}}</p>
 
         </div>
@@ -39,7 +39,7 @@
       el: '#app',
       data:{
         cur: 1,
-        all: 8,
+        all: 200,
         msg: ''
       },
       components:{
